@@ -69,6 +69,7 @@ input {
 
 .item {
   display: flex;
+  align-items: center;
   padding: 5px 10px;
   gap: 10px;
   position: relative;
@@ -83,9 +84,13 @@ input {
   background: transparent;
 }
 
-.toDoItem {
+.toDoText {
   width: 100%;
-  border: none;
+  outline: none;
+}
+
+.toDoText.checked {
+  text-decoration: line-through;
 }
 
 .deleteBtn {
