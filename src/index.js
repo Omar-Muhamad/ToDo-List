@@ -15,7 +15,7 @@ const data = [
     description: 'Grocery Shopping',
     completed: 'false',
     index: '3',
-  }
+  },
 ];
 
 function add(data) {
