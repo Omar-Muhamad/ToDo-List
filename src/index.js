@@ -1,12 +1,39 @@
 import './style.css';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
+const data = [
+  {
+    description: 'Workout',
+    completed: 'false',
+    index: '1',
+  },
+  {
+    description: 'Finish today Lessons',
+    completed: 'false',
+    index: '2',
+  },
+  {
+    description: 'Grocery Shopping',
+    completed: 'false',
+    index: '3',
   }
-  
-  document.body.appendChild(component());
+];
+
+function add(data) {
+  const listItems = document.getElementById('listItems');
+  const item = `
+    <li class="item" data-id=${data.index}>
+      <input type="checkbox" data-id=${data.index}>
+      <input type="text" class="toDoItem" value="${data.description}"" data-id=${data.index}>
+      <button class="deleteBtn" data-id=${data.index}><i class="far fa-trash-alt" ></i></button>
+    </li>
+  `;
+  listItems.innerHTML += item;
+}
+
+function initialLoad() {
+  data.forEach((data) => {
+    add(data);
+  });
+}
+
+initialLoad(data);
