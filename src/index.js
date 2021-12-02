@@ -4,17 +4,17 @@ const data = [
   {
     description: 'Workout',
     completed: 'false',
-    index: '1',
+    index: 2,
   },
   {
     description: 'Finish today Lessons',
     completed: 'false',
-    index: '2',
+    index: 1,
   },
   {
     description: 'Grocery Shopping',
     completed: 'false',
-    index: '3',
+    index: 3,
   },
 ];
 
@@ -30,10 +30,11 @@ function add(data) {
   listItems.innerHTML += item;
 }
 
-function initialLoad() {
-  data.forEach((data) => {
-    add(data);
-  });
+function initialLoad(data) {
+  data.sort((a, b) => (a.index - b.index))
+    .forEach((data) => {
+      add(data);
+    });
 }
 
 initialLoad(data);
