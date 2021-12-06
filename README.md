@@ -10,6 +10,10 @@
   4. Add list data dynamically from the data array.
   5. Add linters files and fix its errors.
 
+# Site Live Demo
+
+![Live Demo Link](https://omar-muhamad.github.io/ToDo-List/dist/)
+
 # Site Screenshots
 
 ![screenshot](Screenshot.png)
