@@ -12,7 +12,7 @@
 
 # Site Live Demo
 
-![Live Demo Link](https://omar-muhamad.github.io/ToDo-List/dist/)
+[Live Demo Link](https://omar-muhamad.github.io/ToDo-List/dist/)
 
 # Site Screenshots
 
