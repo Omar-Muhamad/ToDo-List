@@ -1,1 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wbpack Exercise</title><script defer="defer" src="main.js"></script></head><body><h1>Hello webpack!</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>ToDo List</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <h1>ToDo List</h1>
+    <div class="container">
+      <form class="form">
+        <input
+          type="text"
+          name="description"
+          class="newItem"
+          id="newItem"
+          required
+        />
+        <div class="submit">
+          <input
+            type="submit"
+            class="submitNewItem"
+            id="submitNewItem"
+            value=""
+          />
+          <i class="fas fa-arrow-circle-right fa-lg"></i>
+        </div>
+      </form>
+      <ul class="listItems" id="listItems"></ul>
+      <button type="button" class="clearCompleted" id="clearCompleted">
+        Clear All Completed
+      </button>
+    </div>
+  </body>
+</html>
