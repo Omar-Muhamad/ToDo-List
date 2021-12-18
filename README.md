@@ -2,6 +2,8 @@
 
 # ToDo List
 
+**This is a Webpack Project about TO-DO list which you can add your to-dos, edit them, add mark 'em as completed**
+
 **What I did in this project:**
 
   1. Setup webpack.
